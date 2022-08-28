@@ -36,7 +36,7 @@ jobs:
         with:
           sarif_file: ${{ steps.scan.outputs.sarif }}
       - name: Build the docker-compose stack
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         run: docker-compose up -d
       - name: Build, unit tests and integration tests
         run: |
