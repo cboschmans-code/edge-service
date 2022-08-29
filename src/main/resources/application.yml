@@ -3,7 +3,7 @@ server:
   netty:
     connection-timeout: 2s
     idle-timeout: 15s
-  shutdown: graceful
+  shutdown: immediate
 
 spring:
   application:
