@@ -3,7 +3,7 @@ server:
   netty:
     connection-timeout: 2s
     idle-timeout: 15s
-  shutdown: immediate
+  shutdown: graceful
 
 spring:
   application:
@@ -142,5 +142,7 @@ management:
   metrics:
       tags:
         application: ${spring.application.name}
+  security:
+    enabled: false
 
 
