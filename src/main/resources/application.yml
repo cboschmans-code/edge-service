@@ -131,7 +131,8 @@ management:
         enabled: true
       group:
         readiness:
-          include: readinessState, redis
+          include: readinessState
+
   info:
     env:
       enabled: true
@@ -144,5 +145,9 @@ management:
         application: ${spring.application.name}
   security:
     enabled: false
-
+  health:
+    livenessState:
+      enabled: true
+    readinessState:
+      enabled: true
 
