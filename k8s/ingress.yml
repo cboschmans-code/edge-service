@@ -6,7 +6,6 @@ metadata:
 #    kubernetes.io/ingress.class: alb
 #    alb.ingress.kubernetes.io/scheme: internet-facing
 spec:
- # ingressClassName: nginx
   rules:
     - http:
         paths:
